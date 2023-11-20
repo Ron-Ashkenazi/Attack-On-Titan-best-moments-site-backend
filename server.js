@@ -16,6 +16,8 @@ app.use(
 
 app.use("/api/aot/moments-hth-stats", require("./routes/momentHTHStatsRoute"));
 
+app.use("/api/ping", require("./routes/pingRoute"));
+
 const port = 5000 || process.env.PORT;
 
 app.listen(port, () => console.log("Backend server live on " + port));
